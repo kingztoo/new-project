@@ -18,18 +18,28 @@
     --border-radius-1: 0.4rem;
     --border-radius-2: 0.8rem;
     --border-radius-3: 1.2rem;
+
     --card-padding: 0.8rem;
     --padding-1: 1.2rem;
+
     --box-shadow: 0 2rem 3rem var(--color-light);
 }
 
 
-::-webkit-scrollbar { width: 10px; }
-::-webkit-scrollbar-track { background-color: hsl(194, 23%, 49%); }
-::-webkit-scrollbar-thumb { background-color: hwb(204 35% 0%);border-radius: 3rem;}
-::-webkit-scrollbar-thumb:hover { background-color: hsl(220, 5%, 30%); }
-
-:focus-visible { outline-offset: 4px;}
+body::-webkit-scrollbar {
+    width: 6px;               /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: var(--color-info-dark);        /* color of the tracking area */
+    border-radius: 30px;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background: var(--color-primary);    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    
+  }
 
 /*---------------DARK THEME VARIBlES ---------------*/
 .dark-theme-variables {
@@ -61,9 +71,65 @@ body {
     background: var(--color-background);
     color: var(--color-dark);
     user-select: none;
-    overflow-x: scroll; 
+    overflow-x: scroll;  
 }
 
+.best {  
+    width: 540px;
+    height: 450px;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 10%;
+}
+
+.tabs {   
+    float: left;
+    top: -5%;
+    left: 5%;
+    position: absolute;
+    width: 15%;
+    height: 110%;
+    background: #2ed573;
+    border: .1em solid #fff ;
+    list-style: none;
+    padding: 50px;
+    font-size: 1.4em;
+    color: white;
+    display: block;
+    transition: all .3s ease-in-out;
+
+}
+
+.rightbox {
+    width: 60%;
+    margin-left: 3%;
+
+}
+
+h1 {
+    font-family: sans-serif;
+    color: #7ed;
+    font-size: 1.2rem;
+    margin-top: 48px;
+    margin-bottom: 35px;
+}
+
+h2 {
+    margin-bottom: 35px;
+}
+
+.profile-tabShow {
+  background: yellow;
+  margin-left: 3%;
+}
+.payment-tabShow {
+    background: black;
+    width: 540px;
+    height: 450px;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 10%;
+}
 .container{
     display: grid;
     width: 96%;
@@ -746,3 +812,13 @@ main .recent-orders a {
     font-size: 25px;
     padding: 5px 5px;
 }
+
+
+
+
+
+
+
+
+
+
